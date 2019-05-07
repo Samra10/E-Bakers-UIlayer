@@ -1,0 +1,19 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="Id" [value]="service.Id">
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+            <i class="fas fa-user"></i>
+        </div>
+      </div>
+     <input  name="StudentName" #StudentName="ngModel" [(ngModel)]="service.StudentName" class="form-control" placeholder="Student Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success btn-lg btn-block"><i class="fas fa-user"></i> Submit</button>
+  </div>
+  <br>  
+  <a routerLink="src\app\stud-details\stud-details.component.html"><button class="btn btn-success pull-right" > Show Students Details</button></a>
+
+  </form>
