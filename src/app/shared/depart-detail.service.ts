@@ -18,7 +18,7 @@ export class DepartDetailService {
   }
   putDepartmentDetail(formData:DepartDetail)
   {
-    return this.http.put(this.rootURL+'/Department'+formData.ID, formData)
+    return this.http.put(this.rootURL+'/Department/'+formData.ID, formData)
   }
 
   deleteDepartmentDetail(id)
